@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIN Decoder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>VIN Decoder</h1>
+        <p>Enter a Vehicle Identification Number (VIN) below to get details.</p>
+        <input type="text" id="vinInput" placeholder="Enter VIN (17 characters)" maxlength="17">
+        <button id="decodeBtn">Decode VIN</button>
+        <div id="results" class="results-container">
+            <h2>Vehicle Details</h2>
+            <p><strong>Country:</strong> <span id="country"></span></p>
+            <p><strong>Manufacturer:</strong> <span id="manufacturer"></span></p>
+            <p><strong>Description:</strong> <span id="description"></span></p>
+            <p><strong>Model Year:</strong> <span id="modelYear"></span></p>
+            <div id="error" class="error-message"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
